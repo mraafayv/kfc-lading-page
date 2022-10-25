@@ -80,7 +80,12 @@
     border: 2px solid white;
     padding: 12px 44px 12px 44px;
     border-radius: 25px;
+    background-image: linear-gradient(to right, #e43a15 0%, #e65245 51%, #e43a15 100%);
     box-shadow: 0px 3px 8px rgb(168, 43, 43);
+}
+
+.order-button:hover {
+    background-position: right center;
 }
 
 .home {
@@ -108,7 +113,7 @@
     margin: auto;
     background: rgb(255, 173, 29);
     background: linear-gradient(82deg, rgba(255, 173, 29, 1) 0%, rgba(255, 184, 0, 1) 35%, rgb(255, 160, 7) 100%);
-    box-shadow: 0px 0.5px 4px rgb(61, 56, 32);
+    box-shadow: 0px 1px 8px rgb(183, 153, 100);
     color: white;
     padding: 12px;
     border-radius: 25px;
@@ -155,13 +160,13 @@
 
 .navigation {
     width: 100%;
-    height: 560px;
+    height: 200vh;
     /* opacity: 0.7; */
-    background-image: linear-gradient(135deg, #fae7d3 0%, #ffe4ce 100%);
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 }
 
 .navigation-container {
-    height: 100%;
+    height: 40%;
     width: 80%;
     margin: auto;
     display: flex;
@@ -169,7 +174,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 32px;
-    padding: 80px;
+    padding: 100px;
 }
 
 .card {
@@ -202,16 +207,23 @@
 .card-image img {
     width: 160px;
     height: 160px;
+    border: 1px solid yellow;
 }
 
 
 
 .text-section {
+    height: 90%;
+    border: 1px solid yellow;
     margin-left: 12px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .text-section p {
+    top: 0;
     margin-top: 8px;
     margin-bottom: 12px;
 }
@@ -222,9 +234,14 @@
 .text-section h3 {
     color: red;
 }
+.middle .text-section {
+    color: white;
+}
+.middle h3 {
+    color: white;
+}
 
-
-.middle {
+/* .middle {
     height: 180px;
     width: 280px;
 }
@@ -242,10 +259,203 @@
 .middle img {
     height: 124px;
     width: 180px;
-}
+} */
 
 #map {
     width: 120px;
     height: 96px;
-    transform: rotateZ(15deg);
+}
+
+.btn {
+    text-decoration: none;
+    background-color: rgb(255, 45, 45);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    padding: 8px 16px;
+    /* padding-top: 6px;
+    padding-bottom: 6px; */
+    border-radius: 25px;
+    width: fit-content;
+}
+
+
+.banner{
+    height: 220px;
+    width: 100%;
+    background-image: linear-gradient( 135deg, #fcab31 10%, #f59055 100%);
+}
+
+.banner-text h1 {
+    width: 280px;
+    line-height: 1.15em;
+}
+.banner-background {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 100%;
+}
+
+
+.banner-text h1 {
+    color: white;
+}
+
+
+.buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.download-btn {
+    margin-top: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: black;
+    color: white;
+    width: 152px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 24px;
+    box-shadow: 0 3px 12px rgba(52, 52, 52, 0.5);
+}
+
+.download-btn .fa-brands {
+    font-size: 24px;
+}
+
+.btn-text p {
+    font-size: 8px;
+    padding-bottom: 2px;
+}
+
+.btn-text h3 {
+    font-size: 16px;
+}
+
+.download-btn .fa-google-play {
+    font-size: 18px;
+}
+
+
+.socialmedia-posts {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 600px;
+    border: 2px solid black;
+}
+.socialmedia-posts h1 {
+    font-size: 56px;
+    font-weight: 900;
+    color: #e2d1c3;
+}
+
+.post-container {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    /* justify-content: center; */
+    margin: auto;
+    border: 1px solid red;
+}
+
+.social {
+    width: 55%;
+    height: 100%;
+    border: 3px solid purple;
+}
+
+.videos {
+    width: 42%;
+    height: 100%;
+    margin-left: auto;
+    /* height: 379px; */
+    border: 3px solid purple;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    height: 85%;
+    justify-content: space-between;
+    /* padding: 12px; */
+    row-gap: 4px;
+    gap: 12px;
+}
+
+.post-card:nth-last-child(-n+3){
+    height: 220px;
+    width: 188px;
+}
+
+.post-card {
+    display: flex;
+    overflow: hidden;
+    gap: 12px;
+    height: 100px;
+    width: 256px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+}
+
+.post-body {
+    width: 80%;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.post-body p {
+    line-height: 1.3em;
+}
+
+.post-body .tag {
+    color: rgb(65, 65, 255);
+}
+
+.post-card i {
+    height: 28px;
+    width: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 50%;
+}
+
+.post-card .fa-twitter {
+    background-color: rgb(53, 191, 255);
+    box-shadow: 0 2px 6px rgb(113, 207, 251);
+}
+
+.post-card .fa-instagram {
+    background-color: rgb(255, 47, 47);
+    box-shadow: 0 2px 6px rgb(255, 83, 83);
+
+}
+
+.post-card .fa-facebook-f {
+    background-color: rgb(46, 109, 203);
+    box-shadow: 0 2px 6px rgb(75, 129, 211);
+
+}
+
+
+
+
+
+
+.video-container {
+    height: 80%;
+    border-radius: 4px;
+    background-color: whitesmoke;
 }
