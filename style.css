@@ -355,9 +355,9 @@
     display: flex;
     align-items: center;
     width: 100%;
-    padding-top: 60px ;
-    padding-bottom: 60px ;
-    /* height: 600px; */
+    padding-top: 60px;
+    padding-bottom: 60px;
+    height: 600px;
     /* border: 2px solid black; */
     background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
 
@@ -601,4 +601,9 @@
     .text-container p {
         width: 80%;
     }
-  }
+}
+
+@media only screen and (max-width: 320px) {
+    
+   
+}
